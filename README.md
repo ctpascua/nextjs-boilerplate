@@ -1,974 +1,206 @@
-[
-  {
-    "Id": 8614,
-    "Vendor": "Southwest",
-    "category": "Flights",
-    "price": 795.42,
-    "canonical_category": "flights",
-    "transaction_date": "2024-11-28"
-  },
-  {
-    "Id": 2319,
-    "Vendor": "Trader Joe's",
-    "category": "Grocery Store",
-    "price": 145.89,
-    "canonical_category": "grocery_store",
-    "transaction_date": "2025-02-15"
-  },
-  {
-    "Id": 7749,
-    "Vendor": "The Cheesecake Factory",
-    "category": "Dining",
-    "price": 88.14,
-    "canonical_category": "dining",
-    "transaction_date": "2024-09-01"
-  },
-  {
-    "Id": 6431,
-    "Vendor": "Hilton",
-    "category": "Hotel",
-    "price": 432.77,
-    "canonical_category": "hotel",
-    "transaction_date": "2025-05-10"
-  },
-  {
-    "Id": 4125,
-    "Vendor": "DoorDash",
-    "category": "Dining",
-    "price": 45.67,
-    "canonical_category": "dining",
-    "transaction_date": "2024-07-22"
-  },
-  {
-    "Id": 9843,
-    "Vendor": "Kroger",
-    "category": "Grocery Store",
-    "price": 210.33,
-    "canonical_category": "grocery_store",
-    "transaction_date": "2025-01-05"
-  },
-  {
-    "Id": 1828,
-    "Vendor": "American Airlines",
-    "category": "Flights",
-    "price": 349.19,
-    "canonical_category": "flights",
-    "transaction_date": "2024-12-19"
-  },
-  {
-    "Id": 5391,
-    "Vendor": "Airbnb",
-    "category": "Hotel",
-    "price": 289.50,
-    "canonical_category": "hotel",
-    "transaction_date": "2025-04-01"
-  },
-  {
-    "Id": 3456,
-    "Vendor": "Chipotle",
-    "category": "Dining",
-    "price": 22.48,
-    "canonical_category": "dining",
-    "transaction_date": "2024-08-15"
-  },
-  {
-    "Id": 7890,
-    "Vendor": "Harris Teeter",
-    "category": "Grocery Store",
-    "price": 78.92,
-    "canonical_category": "grocery_store",
-    "transaction_date": "2025-03-22"
-  },
-  {
-    "Id": 1122,
-    "Vendor": "United Airlines",
-    "category": "Flights",
-    "price": 512.66,
-    "canonical_category": "flights",
-    "transaction_date": "2024-10-10"
-  },
-  {
-    "Id": 3344,
-    "Vendor": "Marriott",
-    "category": "Hotel",
-    "price": 550.98,
-    "canonical_category": "hotel",
-    "transaction_date": "2025-06-05"
-  },
-  {
-    "Id": 5566,
-    "Vendor": "Starbucks",
-    "category": "Dining",
-    "price": 12.89,
-    "canonical_category": "dining",
-    "transaction_date": "2024-07-01"
-  },
-  {
-    "Id": 7788,
-    "Vendor": "Whole Foods",
-    "category": "Grocery Store",
-    "price": 189.45,
-    "canonical_category": "grocery_store",
-    "transaction_date": "2025-02-28"
-  },
-  {
-    "Id": 9900,
-    "Vendor": "Delta Airlines",
-    "category": "Flights",
-    "price": 234.56,
-    "canonical_category": "flights",
-    "transaction_date": "2024-11-01"
-  },
-  {
-    "Id": 1234,
-    "Vendor": "Hyatt",
-    "category": "Hotel",
-    "price": 321.80,
-    "canonical_category": "hotel",
-    "transaction_date": "2025-01-20"
-  },
-  {
-    "Id": 5678,
-    "Vendor": "McDonald's",
-    "category": "Dining",
-    "price": 15.72,
-    "canonical_category": "dining",
-    "transaction_date": "2024-09-18"
-  },
-  {
-    "Id": 9012,
-    "Vendor": "Safeway",
-    "category": "Grocery Store",
-    "price": 63.22,
-    "canonical_category": "grocery_store",
-    "transaction_date": "2025-04-12"
-  },
-  {
-    "Id": 3457,
-    "Vendor": "Southwest",
-    "category": "Flights",
-    "price": 188.40,
-    "canonical_category": "flights",
-    "transaction_date": "2024-08-25"
-  },
-  {
-    "Id": 7891,
-    "Vendor": "Holiday Inn",
-    "category": "Hotel",
-    "price": 175.00,
-    "canonical_category": "hotel",
-    "transaction_date": "2025-03-01"
-  },
-  {
-    "Id": 1221,
-    "Vendor": "Starbucks",
-    "category": "Dining",
-    "price": 8.50,
-    "canonical_category": "dining",
-    "transaction_date": "2025-05-30"
-  },
-  {
-    "Id": 4567,
-    "Vendor": "Trader Joe's",
-    "category": "Grocery Store",
-    "price": 95.10,
-    "canonical_category": "grocery_store",
-    "transaction_date": "2024-10-25"
-  },
-  {
-    "Id": 8901,
-    "Vendor": "American Airlines",
-    "category": "Flights",
-    "price": 630.00,
-    "canonical_category": "flights",
-    "transaction_date": "2025-06-15"
-  },
-  {
-    "Id": 2345,
-    "Vendor": "Hilton",
-    "category": "Hotel",
-    "price": 499.99,
-    "canonical_category": "hotel",
-    "transaction_date": "2024-12-05"
-  },
-  {
-    "Id": 6789,
-    "Vendor": "The Cheesecake Factory",
-    "category": "Dining",
-    "price": 115.30,
-    "canonical_category": "dining",
-    "transaction_date": "2025-01-15"
-  },
- {
-   "Id": 1123,
-   "Vendor": "McDonald's",
-   "category": "Dining",
-   "price": 18.45,
-   "canonical_category": "dining",
-   "transaction_date": "2024-09-12"
- },
- {
-   "Id": 4587,
-   "Vendor": "Whole Foods",
-   "category": "Grocery Store",
-   "price": 134.56,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-01-28"
- },
- {
-   "Id": 8912,
-   "Vendor": "American Airlines",
-   "category": "Flights",
-   "price": 345.99,
-   "canonical_category": "flights",
-   "transaction_date": "2024-11-15"
- },
- {
-   "Id": 3345,
-   "Vendor": "Marriott",
-   "category": "Hotel",
-   "price": 289.70,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-03-22"
- },
- {
-   "Id": 6781,
-   "Vendor": "The Cheesecake Factory",
-   "category": "Dining",
-   "price": 78.12,
-   "canonical_category": "dining",
-   "transaction_date": "2024-08-05"
- },
- {
-   "Id": 2459,
-   "Vendor": "Kroger",
-   "category": "Grocery Store",
-   "price": 95.33,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-05-10"
- },
- {
-   "Id": 7123,
-   "Vendor": "Delta Airlines",
-   "category": "Flights",
-   "price": 512.60,
-   "canonical_category": "flights",
-   "transaction_date": "2024-10-01"
- },
- {
-   "Id": 5894,
-   "Vendor": "Hilton",
-   "category": "Hotel",
-   "price": 433.80,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-02-14"
- },
- {
-   "Id": 9321,
-   "Vendor": "Chipotle",
-   "category": "Dining",
-   "price": 22.45,
-   "canonical_category": "dining",
-   "transaction_date": "2024-07-19"
- },
- {
-   "Id": 1654,
-   "Vendor": "Trader Joe's",
-   "category": "Grocery Store",
-   "price": 78.92,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-04-03"
- },
- {
-   "Id": 8234,
-   "Vendor": "United Airlines",
-   "category": "Flights",
-   "price": 299.00,
-   "canonical_category": "flights",
-   "transaction_date": "2024-12-05"
- },
- {
-   "Id": 4768,
-   "Vendor": "Hyatt",
-   "category": "Hotel",
-   "price": 350.55,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-06-11"
- },
- {
-   "Id": 3109,
-   "Vendor": "Starbucks",
-   "category": "Dining",
-   "price": 9.75,
-   "canonical_category": "dining",
-   "transaction_date": "2024-09-28"
- },
- {
-   "Id": 7543,
-   "Vendor": "Safeway",
-   "category": "Grocery Store",
-   "price": 112.89,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-01-08"
- },
- {
-   "Id": 2881,
-   "Vendor": "Southwest",
-   "category": "Flights",
-   "price": 189.40,
-   "canonical_category": "flights",
-   "transaction_date": "2024-11-22"
- },
- {
-   "Id": 6123,
-   "Vendor": "Holiday Inn",
-   "category": "Hotel",
-   "price": 178.00,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-03-01"
- },
- {
-   "Id": 4456,
-   "Vendor": "DoorDash",
-   "category": "Dining",
-   "price": 55.60,
-   "canonical_category": "dining",
-   "transaction_date": "2024-08-11"
- },
- {
-   "Id": 8790,
-   "Vendor": "Harris Teeter",
-   "category": "Grocery Store",
-   "price": 63.40,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-05-16"
- },
- {
-   "Id": 3901,
-   "Vendor": "American Airlines",
-   "category": "Flights",
-   "price": 412.88,
-   "canonical_category": "flights",
-   "transaction_date": "2024-10-18"
- },
- {
-   "Id": 7234,
-   "Vendor": "Airbnb",
-   "category": "Hotel",
-   "price": 245.00,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-02-20"
- },
- {
-   "Id": 5567,
-   "Vendor": "McDonald's",
-   "category": "Dining",
-   "price": 12.33,
-   "canonical_category": "dining",
-   "transaction_date": "2024-07-25"
- },
- {
-   "Id": 9890,
-   "Vendor": "Whole Foods",
-   "category": "Grocery Store",
-   "price": 199.50,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-04-10"
- },
- {
-   "Id": 1334,
-   "Vendor": "Delta Airlines",
-   "category": "Flights",
-   "price": 650.75,
-   "canonical_category": "flights",
-   "transaction_date": "2024-12-12"
- },
- {
-   "Id": 4678,
-   "Vendor": "Marriott",
-   "category": "Hotel",
-   "price": 310.90,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-06-05"
- },
- {
-   "Id": 8012,
-   "Vendor": "Starbucks",
-   "category": "Dining",
-   "price": 15.65,
-   "canonical_category": "dining",
-   "transaction_date": "2024-09-02"
- },
- {
-   "Id": 2346,
-   "Vendor": "Kroger",
-   "category": "Grocery Store",
-   "price": 85.40,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-01-22"
- },
- {
-   "Id": 6780,
-   "Vendor": "United Airlines",
-   "category": "Flights",
-   "price": 421.30,
-   "canonical_category": "flights",
-   "transaction_date": "2024-11-08"
- },
- {
-   "Id": 5123,
-   "Vendor": "Hyatt",
-   "category": "Hotel",
-   "price": 520.00,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-03-15"
- },
- {
-   "Id": 9456,
-   "Vendor": "Chipotle",
-   "category": "Dining",
-   "price": 31.50,
-   "canonical_category": "dining",
-   "transaction_date": "2024-08-20"
- },
- {
-   "Id": 1789,
-   "Vendor": "Trader Joe's",
-   "category": "Grocery Store",
-   "price": 55.78,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-05-24"
- },
- {
-   "Id": 8567,
-   "Vendor": "Southwest",
-   "category": "Flights",
-   "price": 205.10,
-   "canonical_category": "flights",
-   "transaction_date": "2024-10-25"
- },
- {
-   "Id": 4210,
-   "Vendor": "Hilton",
-   "category": "Hotel",
-   "price": 299.45,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-02-01"
- },
- {
-   "Id": 3654,
-   "Vendor": "The Cheesecake Factory",
-   "category": "Dining",
-   "price": 120.80,
-   "canonical_category": "dining",
-   "transaction_date": "2024-07-11"
- },
- {
-   "Id": 7987,
-   "Vendor": "Safeway",
-   "category": "Grocery Store",
-   "price": 150.25,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-04-18"
- },
- {
-   "Id": 2234,
-   "Vendor": "American Airlines",
-   "category": "Flights",
-   "price": 380.00,
-   "canonical_category": "flights",
-   "transaction_date": "2024-12-20"
- },
- {
-   "Id": 6567,
-   "Vendor": "Marriott",
-   "category": "Hotel",
-   "price": 450.60,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-06-15"
- },
- {
-   "Id": 4890,
-   "Vendor": "DoorDash",
-   "category": "Dining",
-   "price": 48.90,
-   "canonical_category": "dining",
-   "transaction_date": "2024-09-09"
- },
- {
-   "Id": 8123,
-   "Vendor": "Harris Teeter",
-   "category": "Grocery Store",
-   "price": 75.15,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-01-02"
- },
- {
-   "Id": 3456,
-   "Vendor": "Delta Airlines",
-   "category": "Flights",
-   "price": 530.40,
-   "canonical_category": "flights",
-   "transaction_date": "2024-11-30"
- },
- {
-   "Id": 7890,
-   "Vendor": "Airbnb",
-   "category": "Hotel",
-   "price": 210.00,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-03-08"
- },
- {
-   "Id": 1123,
-   "Vendor": "McDonald's",
-   "category": "Dining",
-   "price": 9.99,
-   "canonical_category": "dining",
-   "transaction_date": "2024-08-01"
- },
- {
-   "Id": 4456,
-   "Vendor": "Whole Foods",
-   "category": "Grocery Store",
-   "price": 215.70,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-05-01"
- },
- {
-   "Id": 8789,
-   "Vendor": "United Airlines",
-   "category": "Flights",
-   "price": 489.50,
-   "canonical_category": "flights",
-   "transaction_date": "2024-10-05"
- },
- {
-   "Id": 3012,
-   "Vendor": "Hyatt",
-   "category": "Hotel",
-   "price": 610.20,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-02-12"
- },
- {
-   "Id": 6345,
-   "Vendor": "Starbucks",
-   "category": "Dining",
-   "price": 11.25,
-   "canonical_category": "dining",
-   "transaction_date": "2024-07-15"
- },
- {
-   "Id": 9678,
-   "Vendor": "Kroger",
-   "category": "Grocery Store",
-   "price": 99.80,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-04-25"
- },
- {
-   "Id": 1901,
-   "Vendor": "Southwest",
-   "category": "Flights",
-   "price": 222.33,
-   "canonical_category": "flights",
-   "transaction_date": "2024-12-28"
- },
- {
-   "Id": 5234,
-   "Vendor": "Holiday Inn",
-   "category": "Hotel",
-   "price": 195.50,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-06-20"
- },
- {
-   "Id": 8567,
-   "Vendor": "Chipotle",
-   "category": "Dining",
-   "price": 25.00,
-   "canonical_category": "dining",
-   "transaction_date": "2024-09-20"
- },
- {
-   "Id": 4890,
-   "Vendor": "Trader Joe's",
-   "category": "Grocery Store",
-   "price": 82.50,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-01-18"
- },
- {
-   "Id": 3123,
-   "Vendor": "American Airlines",
-   "category": "Flights",
-   "price": 460.70,
-   "canonical_category": "flights",
-   "transaction_date": "2024-11-12"
- },
- {
-   "Id": 7456,
-   "Vendor": "Hilton",
-   "category": "Hotel",
-   "price": 380.90,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-03-28"
- },
- {
-   "Id": 5789,
-   "Vendor": "The Cheesecake Factory",
-   "category": "Dining",
-   "price": 99.00,
-   "canonical_category": "dining",
-   "transaction_date": "2024-08-10"
- },
- {
-   "Id": 9012,
-   "Vendor": "Safeway",
-   "category": "Grocery Store",
-   "price": 130.45,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-05-08"
- },
- {
-   "Id": 1345,
-   "Vendor": "Delta Airlines",
-   "category": "Flights",
-   "price": 550.00,
-   "canonical_category": "flights",
-   "transaction_date": "2024-10-12"
- },
- {
-   "Id": 4678,
-   "Vendor": "Marriott",
-   "category": "Hotel",
-   "price": 490.25,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-02-08"
- },
- {
-   "Id": 8901,
-   "Vendor": "DoorDash",
-   "category": "Dining",
-   "price": 35.75,
-   "canonical_category": "dining",
-   "transaction_date": "2024-07-02"
- },
- {
-   "Id": 2234,
-   "Vendor": "Harris Teeter",
-   "category": "Grocery Store",
-   "price": 92.80,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-04-29"
- },
- {
-   "Id": 6567,
-   "Vendor": "United Airlines",
-   "category": "Flights",
-   "price": 435.60,
-   "canonical_category": "flights",
-   "transaction_date": "2024-12-18"
- },
- {
-   "Id": 5890,
-   "Vendor": "Airbnb",
-   "category": "Hotel",
-   "price": 310.00,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-06-25"
- },
- {
-   "Id": 1223,
-   "Vendor": "McDonald's",
-   "category": "Dining",
-   "price": 14.80,
-   "canonical_category": "dining",
-   "transaction_date": "2024-09-25"
- },
- {
-   "Id": 4556,
-   "Vendor": "Whole Foods",
-   "category": "Grocery Store",
-   "price": 180.20,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-01-05"
- },
- {
-   "Id": 8889,
-   "Vendor": "Southwest",
-   "category": "Flights",
-   "price": 240.50,
-   "canonical_category": "flights",
-   "transaction_date": "2024-11-25"
- },
- {
-   "Id": 3112,
-   "Vendor": "Hyatt",
-   "category": "Hotel",
-   "price": 580.75,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-03-12"
- },
- {
-   "Id": 6445,
-   "Vendor": "Starbucks",
-   "category": "Dining",
-   "price": 8.90,
-   "canonical_category": "dining",
-   "transaction_date": "2024-08-18"
- },
- {
-   "Id": 9778,
-   "Vendor": "Kroger",
-   "category": "Grocery Store",
-   "price": 105.55,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-05-14"
- },
- {
-   "Id": 1001,
-   "Vendor": "American Airlines",
-   "category": "Flights",
-   "price": 395.80,
-   "canonical_category": "flights",
-   "transaction_date": "2024-10-28"
- },
- {
-   "Id": 5334,
-   "Vendor": "Holiday Inn",
-   "category": "Hotel",
-   "price": 205.00,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-02-25"
- },
- {
-   "Id": 8667,
-   "Vendor": "Chipotle",
-   "category": "Dining",
-   "price": 28.90,
-   "canonical_category": "dining",
-   "transaction_date": "2024-07-28"
- },
- {
-   "Id": 4990,
-   "Vendor": "Trader Joe's",
-   "category": "Grocery Store",
-   "price": 65.70,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-04-08"
- },
- {
-   "Id": 3223,
-   "Vendor": "Delta Airlines",
-   "category": "Flights",
-   "price": 610.90,
-   "canonical_category": "flights",
-   "transaction_date": "2024-12-01"
- },
- {
-   "Id": 7556,
-   "Vendor": "Hilton",
-   "category": "Hotel",
-   "price": 455.20,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-06-28"
- },
- {
-   "Id": 5889,
-   "Vendor": "The Cheesecake Factory",
-   "category": "Dining",
-   "price": 130.00,
-   "canonical_category": "dining",
-   "transaction_date": "2024-09-05"
- },
- {
-   "Id": 9112,
-   "Vendor": "Safeway",
-   "category": "Grocery Store",
-   "price": 140.80,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-01-20"
- },
- {
-   "Id": 1445,
-   "Vendor": "United Airlines",
-   "category": "Flights",
-   "price": 500.00,
-   "canonical_category": "flights",
-   "transaction_date": "2024-11-18"
- },
- {
-   "Id": 4778,
-   "Vendor": "Marriott",
-   "category": "Hotel",
-   "price": 530.50,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-03-05"
- },
- {
-   "Id": 8001,
-   "Vendor": "DoorDash",
-   "category": "Dining",
-   "price": 42.30,
-   "canonical_category": "dining",
-   "transaction_date": "2024-08-25"
- },
- {
-   "Id": 2334,
-   "Vendor": "Harris Teeter",
-   "category": "Grocery Store",
-   "price": 88.60,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-05-20"
- },
- {
-   "Id": 6667,
-   "Vendor": "Southwest",
-   "category": "Flights",
-   "price": 215.75,
-   "canonical_category": "flights",
-   "transaction_date": "2024-10-02"
- },
- {
-   "Id": 5990,
-   "Vendor": "Airbnb",
-   "category": "Hotel",
-   "price": 280.00,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-02-15"
- },
- {
-   "Id": 1213,
-   "Vendor": "McDonald's",
-   "category": "Dining",
-   "price": 11.50,
-   "canonical_category": "dining",
-   "transaction_date": "2024-07-10"
- },
- {
-   "Id": 4546,
-   "Vendor": "Whole Foods",
-   "category": "Grocery Store",
-   "price": 195.90,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-04-15"
- },
- {
-   "Id": 8879,
-   "Vendor": "American Airlines",
-   "category": "Flights",
-   "price": 475.20,
-   "canonical_category": "flights",
-   "transaction_date": "2024-12-25"
- },
- {
-   "Id": 3102,
-   "Vendor": "Hyatt",
-   "category": "Hotel",
-   "price": 620.40,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-06-10"
- },
- {
-   "Id": 6435,
-   "Vendor": "Starbucks",
-   "category": "Dining",
-   "price": 13.20,
-   "canonical_category": "dining",
-   "transaction_date": "2024-09-15"
- },
- {
-   "Id": 9768,
-   "Vendor": "Kroger",
-   "category": "Grocery Store",
-   "price": 110.30,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-01-12"
- },
- {
-   "Id": 1091,
-   "Vendor": "Delta Airlines",
-   "category": "Flights",
-   "price": 580.60,
-   "canonical_category": "flights",
-   "transaction_date": "2024-11-02"
- },
- {
-   "Id": 5324,
-   "Vendor": "Holiday Inn",
-   "category": "Hotel",
-   "price": 215.80,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-03-20"
- },
- {
-   "Id": 8657,
-   "Vendor": "Chipotle",
-   "category": "Dining",
-   "price": 26.75,
-   "canonical_category": "dining",
-   "transaction_date": "2024-08-02"
- },
- {
-   "Id": 4980,
-   "Vendor": "Trader Joe's",
-   "category": "Grocery Store",
-   "price": 72.90,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-05-28"
- },
- {
-   "Id": 3213,
-   "Vendor": "United Airlines",
-   "category": "Flights",
-   "price": 495.00,
-   "canonical_category": "flights",
-   "transaction_date": "2024-10-22"
- },
- {
-   "Id": 7546,
-   "Vendor": "Hilton",
-   "category": "Hotel",
-   "price": 470.10,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-02-02"
- },
- {
-   "Id": 5879,
-   "Vendor": "The Cheesecake Factory",
-   "category": "Dining",
-   "price": 105.40,
-   "canonical_category": "dining",
-   "transaction_date": "2024-07-18"
- },
- {
-   "Id": 9102,
-   "Vendor": "Safeway",
-   "category": "Grocery Store",
-   "price": 125.60,
-   "canonical_category": "grocery_store",
-   "transaction_date": "2025-04-01"
- },
- {
-   "Id": 1435,
-   "Vendor": "Southwest",
-   "category": "Flights",
-   "price": 230.80,
-   "canonical_category": "flights",
-   "transaction_date": "2024-12-08"
- },
- {
-   "Id": 4768,
-   "Vendor": "Marriott",
-   "category": "Hotel",
-   "price": 510.90,
-   "canonical_category": "hotel",
-   "transaction_date": "2025-06-08"
- }
-]
+import React, { useState } from 'react';
+
+// --- TYPE DEFINITIONS ---
+type Account = {
+  id: string;
+  name: string;
+  mask: string;
+  balance: number;
+};
+
+type Bank = {
+  name: string;
+  logo: React.FC<{ className?: string }>;
+};
+
+type Screen = 'intro' | 'choose_bank' | 'credentials' | 'select_account' | 'success';
+
+// --- SVG ICONS ---
+const PlaidLogo = () => (
+  <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="14" cy="14" r="14" fill="#0A2540"/>
+    <path d="M14 5C9.02929 5 5 9.02929 5 14C5 18.9707 9.02929 23 14 23C18.9707 23 23 18.9707 23 14V5H14Z" fill="white"/>
+  </svg>
+);
+
+const BankIconGeneric = ({ className }: { className?: string }) => (
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className={className}>
+        <path d="M12 21V3" /><path d="M5 21V12" /><path d="M19 21V12" /><path d="M5 12L12 3L19 12" /><path d="M3 21H21" />
+    </svg>
+);
+
+const LockIcon = () => ( <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect><path d="M7 11V7a5 5 0 0 1 10 0v4"></path></svg> );
+const CheckCircleIcon = ({ className }: { className?: string }) => ( <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className={className}><path fillRule="evenodd" d="M2.25 12c0-5.385 4.365-9.75 9.75-9.75s9.75 4.365 9.75 9.75-4.365 9.75-9.75 9.75S2.25 17.385 2.25 12zm13.36-1.814a.75.75 0 10-1.22-.872l-3.236 4.53L9.53 12.22a.75.75 0 00-1.06 1.06l2.25 2.25a.75.75 0 001.14-.094l3.75-5.25z" clipRule="evenodd" /></svg> );
+const SearchIcon = () => ( <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg> );
+
+// Generic Bank Logos for demo
+const BankLogo1 = ({className}: {className?:string}) => <div className={`flex items-center justify-center bg-blue-600 text-white font-bold text-xl rounded-full ${className}`}>G</div>;
+const BankLogo2 = ({className}: {className?:string}) => <div className={`flex items-center justify-center bg-red-600 text-white font-bold text-xl rounded-full ${className}`}>P</div>;
+const BankLogo3 = ({className}: {className?:string}) => <div className={`flex items-center justify-center bg-green-600 text-white font-bold text-xl rounded-full ${className}`}>T</div>;
+const BankLogo4 = ({className}: {className?:string}) => <div className={`flex items-center justify-center bg-purple-600 text-white font-bold text-xl rounded-full ${className}`}>C</div>;
+const BankLogo5 = ({className}: {className?:string}) => <div className={`flex items-center justify-center bg-yellow-500 text-white font-bold text-xl rounded-full ${className}`}>B</div>;
+const BankLogo6 = ({className}: {className?:string}) => <div className={`flex items-center justify-center bg-indigo-600 text-white font-bold text-xl rounded-full ${className}`}>W</div>;
 
 
+// --- MOCK DATA ---
+const mockAccounts: Account[] = [
+  { id: 'acc_1', name: 'Personal Savings', mask: '5821', balance: 10324.00 },
+  { id: 'acc_2', name: 'High Interest Savings', mask: '7389', balance: 32904.00 },
+  { id: 'acc_3', name: 'College Savings', mask: '2313', balance: 104.00 },
+];
+
+const popularBanks: Bank[] = [
+    { name: 'Gingham Bank', logo: BankLogo1 },
+    { name: 'Pattern Bank', logo: BankLogo2 },
+    { name: 'Thread Bank', logo: BankLogo3 },
+    { name: 'Chase', logo: BankLogo4 },
+    { name: 'Bank of America', logo: BankLogo5 },
+    { name: 'Wells Fargo', logo: BankLogo6 },
+];
 
 
+// --- UI COMPONENTS FOR EACH SCREEN ---
+
+const IntroScreen = ({ onContinue }: { onContinue: () => void }) => (
+  <div className="p-8 text-center">
+    <div className="flex justify-center items-center mb-6">
+      <div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" className="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 10v-2m0-4h.01M7 12h.01M17 12h.01M7 16h.01M17 16h.01" /></svg></div>
+      <div className="w-8 h-px bg-gray-300 mx-4"></div>
+      <div className="w-20 h-20 bg-gray-800 rounded-full flex items-center justify-center"><PlaidLogo /></div>
+    </div>
+    <h1 className="text-2xl font-semibold text-gray-800 mb-2">WonderWallet uses Plaid to connect your accounts</h1>
+    <div className="text-left space-y-6 mt-8 text-gray-600 max-w-md mx-auto">
+        <div className="flex items-start"><CheckCircleIcon className="w-6 h-6 text-blue-600 mr-4 mt-1 flex-shrink-0" /><div><h2 className="font-semibold text-gray-800">Connect effortlessly</h2><p>Plaid lets you securely connect your financial accounts in seconds.</p></div></div>
+        <div className="flex items-start"><CheckCircleIcon className="w-6 h-6 text-blue-600 mr-4 mt-1 flex-shrink-0" /><div><h2 className="font-semibold text-gray-800">Your data belongs to you</h2><p>Plaid doesn't sell personal info, and will only use it with your permission.</p></div></div>
+    </div>
+    <p className="text-xs text-gray-500 text-center mt-8 mb-4">By selecting "Continue" you agree to the Plaid End User Privacy Policy.</p>
+    <button onClick={onContinue} className="w-full max-w-xs mx-auto bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors">Continue</button>
+  </div>
+);
+
+const ChooseBankScreen = ({ onSelectBank }: { onSelectBank: () => void }) => {
+    const [searchQuery, setSearchQuery] = useState('');
+    const filteredBanks = popularBanks.filter(bank => bank.name.toLowerCase().includes(searchQuery.toLowerCase()));
+
+    return (
+        <div className="p-8 flex flex-col">
+            <h1 className="text-2xl font-semibold text-gray-800 mb-2 text-center">Choose your bank</h1>
+            <p className="text-gray-600 text-center mb-6">Select your bank from the list to continue</p>
+            <div className="relative mb-6">
+                <div className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"><SearchIcon/></div>
+                <input 
+                    type="text" 
+                    placeholder="Search for your bank"
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full border border-gray-300 rounded-lg py-3 pl-10 pr-4 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
+                {filteredBanks.map(bank => (
+                    <button key={bank.name} onClick={onSelectBank} className="flex flex-col items-center justify-center p-4 border border-gray-200 rounded-lg hover:bg-gray-100 hover:border-gray-300 transition-colors focus:outline-none focus:ring-2 focus:ring-blue-500">
+                        <bank.logo className="w-12 h-12 mb-2" />
+                        <span className="text-sm font-semibold text-gray-700">{bank.name}</span>
+                    </button>
+                ))}
+            </div>
+        </div>
+    )
+};
+
+const CredentialsScreen = ({ onContinue }: { onContinue: () => void }) => (
+    <div className="p-8">
+      <div className="flex justify-center items-center mb-8"><div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center border-4 border-white ring-2 ring-gray-300"><BankLogo1 className="w-full h-full" /></div></div>
+      <h1 className="text-2xl font-semibold text-gray-800 mb-2 text-center">Enter your credentials</h1>
+      <p className="text-gray-600 text-center mb-8 text-sm">By providing your Gingham Bank credentials to Plaid, you're enabling Plaid to retrieve your financial data.</p>
+      <div className="space-y-4 max-w-sm mx-auto">
+          <div className="relative"><input type="text" placeholder="Username" className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"/><LockIcon className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400" /></div>
+          <div className="relative"><input type="password" placeholder="Password" className="w-full border border-gray-300 rounded-lg py-3 px-4 focus:outline-none focus:ring-2 focus:ring-blue-500"/><LockIcon className="absolute right-4 top-1/2 -translate-y-1/2 text-gray-400" /></div>
+      </div>
+      <div className="w-full max-w-sm mx-auto mt-8">
+          <button onClick={onContinue} className="w-full bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors">Submit</button>
+          <button className="w-full mt-4 text-gray-600 font-semibold py-2">Reset Password</button>
+      </div>
+    </div>
+);
+
+const SelectAccountScreen = ({ onContinue }: { onContinue: () => void }) => {
+    const [selectedId, setSelectedId] = useState<string>(mockAccounts[0].id);
+
+    return (
+        <div className="p-8">
+          <div className="flex justify-center items-center mb-8"><div className="w-20 h-20 bg-gray-200 rounded-full flex items-center justify-center border-4 border-white ring-2 ring-gray-300"><BankLogo1 className="w-full h-full" /></div></div>
+          <h1 className="text-2xl font-semibold text-gray-800 mb-2 text-center">Select account</h1>
+          <p className="text-gray-600 text-center mb-8 text-sm">Plaid will only share data from Gingham Bank account you select with WonderWallet.</p>
+          <div className="space-y-3 max-w-md mx-auto">
+              {mockAccounts.map(account => (
+                  <div key={account.id} onClick={() => setSelectedId(account.id)} className={`w-full border rounded-lg p-4 flex items-center cursor-pointer transition-all ${ selectedId === account.id ? 'border-blue-600 ring-2 ring-blue-200 bg-blue-50' : 'border-gray-300' }`}>
+                      <div className={`w-5 h-5 rounded-full border-2 flex items-center justify-center mr-4 ${ selectedId === account.id ? 'border-blue-600 bg-blue-600' : 'border-gray-400' }`}>{selectedId === account.id && <div className="w-2 h-2 bg-white rounded-full"></div>}</div>
+                      <div className="flex-grow"><p className="font-semibold text-gray-800">{account.name}</p><p className="text-sm text-gray-500">•••••• {account.mask}</p></div>
+                      <div className="text-right"><p className="font-semibold text-gray-800">${account.balance.toLocaleString('en-US', {minimumFractionDigits: 2})}</p></div>
+                  </div>
+              ))}
+          </div>
+          <div className="w-full px-6 pb-6 mt-8 text-center max-w-md mx-auto">
+            <button onClick={onContinue} className="w-full bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors">Continue</button>
+            <button className="w-full mt-4 text-gray-600 font-semibold py-2">Learn more</button>
+          </div>
+        </div>
+    )
+};
+
+const SuccessScreen = ({ onContinue }: { onContinue: () => void }) => (
+    <div className="p-8 flex-grow flex flex-col justify-center items-center text-center">
+        <div className="relative w-24 h-24 mb-6"><div className="absolute top-0 right-0 w-16 h-16 bg-green-100 rounded-lg transform rotate-12"></div><div className="absolute bottom-0 left-0 w-16 h-16 bg-blue-100 rounded-lg transform -rotate-12"></div><CheckCircleIcon className="w-24 h-24 text-green-500 absolute inset-0" /></div>
+        <h1 className="text-2xl font-semibold text-gray-800 mb-2">Success!</h1>
+        <p className="text-gray-600">Your account has been successfully linked to this application.</p>
+        <div className="w-full max-w-xs mx-auto mt-8">
+            <button onClick={onContinue} className="w-full bg-gray-800 text-white py-3 rounded-lg font-semibold hover:bg-gray-700 transition-colors">Continue</button>
+        </div>
+    </div>
+);
+
+
+// --- MAIN APP COMPONENT ---
+export default function App() {
+  const [screen, setScreen] = useState<Screen>('intro');
+
+  const resetFlow = () => setScreen('intro');
+
+  const renderScreen = () => {
+    switch (screen) {
+      case 'intro':
+        return <IntroScreen onContinue={() => setScreen('choose_bank')} />;
+      case 'choose_bank':
+        return <ChooseBankScreen onSelectBank={() => setScreen('credentials')} />;
+      case 'credentials':
+        return <CredentialsScreen onContinue={() => setScreen('select_account')} />;
+      case 'select_account':
+        return <SelectAccountScreen onContinue={() => setScreen('success')} />;
+      case 'success':
+        return <SuccessScreen onContinue={resetFlow} />; 
+      default:
+        return <IntroScreen onContinue={() => setScreen('choose_bank')} />;
+    }
+  };
+
+  return (
+    <div className="bg-gray-200 min-h-screen flex items-center justify-center p-4 font-sans">
+      <div className="w-full max-w-lg bg-white rounded-2xl shadow-2xl flex flex-col relative">
+        {/* Header with Plaid Logo and Close button */}
+        <div className="flex justify-center items-center p-4 border-b border-gray-200 relative">
+          <div className="flex items-center space-x-2">
+            <PlaidLogo />
+            <span className="font-bold text-gray-800">PLAID</span>
+          </div>
+          <button onClick={resetFlow} className="absolute right-4 top-1/2 -translate-y-1/2 text-2xl text-gray-500 hover:text-gray-800 transition-colors">&times;</button>
+        </div>
+
+        {/* Main Content Area */}
+        <div className="overflow-y-auto">
+            {renderScreen()}
+        </div>
+      </div>
+    </div>
+  );
+}
