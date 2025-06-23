@@ -1,174 +1,89 @@
-import React from 'react';
-
-// --- TYPE DEFINITIONS (for the data processing function) ---
-
-// Represents a single transaction from your bank/card statement.
-interface Transaction {
-  id: string;
-  date: string; // ISO 8601 format: "YYYY-MM-DD"
-  description: string;
-  amount: number;
-  category: 'Groceries' | 'Dining' | 'Travel' | 'Gas' | 'Other';
-  cardId: string; // Links to a specific card in the Cards object
+interface StackedBarChartProps {
+  data: MonthlySavings[];
+  title: string;
+  categoryColors: { [category: string]: string };
 }
 
-// Defines a reward rule for a credit card.
-interface RewardRule {
-  // 'cashback' is a percentage (e.g., 0.05 for 5%).
-  // 'points' is a multiplier (e.g., 3 for 3x points).
-  type: 'cashback' | 'points';
-  // A map of categories to their specific reward rates.
-  rates: {
-    [category: string]: number;
-    default: number; // A default rate is required for all other categories.
-  };
-}
+const SavingsStackedBarChart: React.FC<StackedBarChartProps> = ({ data, title, categoryColors }) => {
+  const [hoveredMonth, setHoveredMonth] = useState<string | null>(null);
+  const chartData = useMemo(() => {
+    const categories = Object.keys(categoryColors);
+    const monthlyTotals = data.map(monthData => 
+        categories.reduce((sum, category) => sum + (Number(monthData[category]) || 0), 0)
+    );
+    const maxTotal = Math.max(...monthlyTotals) * 1.2;
+    return { categories, maxTotal };
+  }, [data, categoryColors]);
 
-// Represents a single credit card and its reward structure.
-interface Card {
-  id: string;
-  name: string;
-  rewards: RewardRule;
-}
+  const { categories, maxTotal } = chartData;
 
-// The output format, matching the chart's expected input.
-type MonthlySavings = {
-  month: string;
-  [category: string]: number | string;
+  const yAxisLabels = useMemo(() => {
+    const labels = [];
+    for (let i = 0; i <= 4; i++) {
+        const value = (maxTotal / 4) * i;
+        labels.push(`$${Math.round(value)}`);
+    }
+    return labels.reverse();
+  }, [maxTotal]);
+
+  return (
+    <div className="bg-white p-6 rounded-2xl shadow-lg w-full max-w-4xl mx-auto font-sans">
+      <h3 className="text-xl font-semibold text-gray-800 mb-2">{title}</h3>
+      <div className="flex flex-wrap justify-center gap-x-4 gap-y-1 mb-6 text-sm text-gray-600">
+        {categories.map(category => (
+            <div key={category} className="flex items-center">
+                <div className="w-3 h-3 rounded-sm mr-2" style={{ backgroundColor: categoryColors[category] }}></div>
+                <span>{category}</span>
+            </div>
+        ))}
+      </div>
+      <div className="flex w-full h-96 space-x-4">
+        <div className="flex flex-col justify-between h-full text-right text-xs text-gray-400 pr-2">
+          {yAxisLabels.map((label, index) => <div key={index}>{label}</div>)}
+        </div>
+        <div className="flex-1 flex items-end justify-around border-b-2 border-l-2 border-gray-200 pb-1">
+          {data.map((monthData, index) => {
+            const totalSavingsForMonth = categories.reduce((sum, cat) => sum + Number(monthData[cat]), 0);
+            return (
+              <div key={index} className="flex flex-col items-center justify-end w-full h-full px-2" onMouseEnter={() => setHoveredMonth(monthData.month as string)} onMouseLeave={() => setHoveredMonth(null)}>
+                {hoveredMonth === monthData.month && (
+                    <div className="relative w-full flex justify-center">
+                        <div className="absolute bottom-full mb-2 w-max p-2 bg-gray-800 text-white text-xs rounded-md shadow-lg z-10">
+                           <div className="font-bold text-base mb-1">{monthData.month}</div>
+                           {categories.map(cat => (<div key={cat} className="flex justify-between w-32"><div className="flex items-center"><div className="w-2 h-2 rounded-full mr-2" style={{ backgroundColor: categoryColors[cat] }}></div><span>{cat}</span></div><span>${Number(monthData[cat]).toFixed(2)}</span></div>))}
+                           <hr className="border-gray-600 my-1"/><div className="flex justify-between font-bold"><span>Total</span><span>${totalSavingsForMonth.toFixed(2)}</span></div>
+                        </div>
+                    </div>
+                )}
+                <div className="relative flex flex-col-reverse justify-start w-full transition-all duration-300" style={{ height: `${(totalSavingsForMonth / maxTotal) * 100}%` }}>
+                  {categories.map(category => {
+                    const categoryValue = Number(monthData[category]) || 0;
+                    const segmentHeight = totalSavingsForMonth > 0 ? (categoryValue / totalSavingsForMonth) * 100 : 0;
+                    return (<div key={category} className="w-full transition-opacity duration-200" style={{ height: `${segmentHeight}%`, backgroundColor: categoryColors[category], opacity: hoveredMonth === monthData.month ? 0.85 : 1 }}></div>);
+                  })}
+                </div>
+                <div className="mt-2 text-xs text-center text-gray-500 font-medium whitespace-nowrap">{monthData.month}</div>
+              </div>
+            );
+          })}
+        </div>
+      </div>
+    </div>
+  );
 };
 
+// --- Main App Component ---
+export default function App() {
+  const trackedCategories = Object.keys(categoryColorMap);
+  const chartReadyData = processTransactionsForChart(rawTransactions, myCards, trackedCategories);
 
-// --- MOCK DATA (More detailed for processing) ---
-
-const POINT_TO_DOLLAR_VALUE = 0.01; // $0.01 per point
-
-const myCards: { [id: string]: Card } = {
-  'card-1': {
-    id: 'card-1',
-    name: 'Cash Back King',
-    rewards: {
-      type: 'cashback',
-      rates: { 'Groceries': 0.05, 'Gas': 0.03, 'default': 0.01 },
-    },
-  },
-  'card-2': {
-    id: 'card-2',
-    name: 'Travel Points Pro',
-    rewards: {
-      type: 'points',
-      rates: { 'Dining': 3, 'Travel': 5, 'default': 1 },
-    },
-  },
-};
-
-const rawTransactions: Transaction[] = [
-  { id: 't1', date: '2025-01-05', description: 'Super Foods', amount: 85.50, category: 'Groceries', cardId: 'card-1' },
-  { id: 't2', date: '2025-01-12', description: 'The Great Cafe', amount: 45.00, category: 'Dining', cardId: 'card-2' },
-  { id: 't3', date: '2025-01-20', description: 'Gas Station', amount: 50.00, category: 'Gas', cardId: 'card-1' },
-  { id: 't4', date: '2025-02-08', description: 'Grocery Haul', amount: 120.00, category: 'Groceries', cardId: 'card-1' },
-  { id: 't5', date: '2025-02-15', description: 'Airfare to Bali', amount: 1200.00, category: 'Travel', cardId: 'card-2' },
-  { id: 't6', date: '2025-03-10', description: 'Fancy Dinner', amount: 150.00, category: 'Dining', cardId: 'card-2' },
-  { id: 't7', date: '2025-03-22', description: 'Book Store', amount: 35.00, category: 'Other', cardId: 'card-2' },
-];
-
-
-// --- The Data Processing Function ---
-
-/**
- * Processes a list of transactions to calculate monthly savings by category.
- * @param transactions - An array of transaction objects.
- * @param cards - An object mapping card IDs to card details.
- * @param categories - An array of category names to track.
- * @returns An array of objects formatted for the stacked bar chart.
- */
-const processTransactionsForChart = (
-    transactions: Transaction[],
-    cards: { [id: string]: Card },
-    categories: string[]
-): MonthlySavings[] => {
-  // Step 1: Aggregate savings into a nested object: { 'Jan': { 'Groceries': 10, ... }, ... }
-  const aggregatedSavings: { [month: string]: { [category: string]: number } } = {};
-
-  for (const trans of transactions) {
-    const card = cards[trans.cardId];
-    if (!card) continue; // Skip if card not found
-
-    // Determine the reward rate for this transaction's category, or use default.
-    const rate = card.rewards.rates[trans.category] || card.rewards.rates.default;
-
-    // Calculate the savings in dollars, normalizing points if necessary.
-    let savingsInDollars = 0;
-    if (card.rewards.type === 'cashback') {
-      savingsInDollars = trans.amount * rate;
-    } else if (card.rewards.type === 'points') {
-      const pointsEarned = trans.amount * rate;
-      savingsInDollars = pointsEarned * POINT_TO_DOLLAR_VALUE;
-    }
-
-    // Get the month name (e.g., "Jan", "Feb") from the transaction date.
-    const month = new Date(trans.date).toLocaleString('default', { month: 'short' });
-
-    // Initialize objects if they don't exist.
-    if (!aggregatedSavings[month]) {
-      aggregatedSavings[month] = {};
-    }
-    if (!aggregatedSavings[month][trans.category]) {
-      aggregatedSavings[month][trans.category] = 0;
-    }
-
-    // Add the calculated savings to the correct month and category.
-    aggregatedSavings[month][trans.category] += savingsInDollars;
-  }
-
-  // Step 2: Format the aggregated data into the array structure required by the chart.
-  const chartData: MonthlySavings[] = Object.keys(aggregatedSavings).map(month => {
-    const monthData: MonthlySavings = { month };
-    for (const category of categories) {
-      // Ensure every category has a value (0 if no savings) for that month.
-      monthData[category] = aggregatedSavings[month][category] || 0;
-    }
-    return monthData;
-  });
-  
-  // Optional: Sort data by month for chronological order in the chart
-  // This part can be made more robust if dealing with multiple years.
-  const monthOrder = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-  chartData.sort((a, b) => monthOrder.indexOf(a.month) - monthOrder.indexOf(b.month));
-
-  return chartData;
-};
-
-
-// --- Example Usage ---
-// This demonstrates how you would call the function and use its output.
-// In your main App component, you would do something like this:
-
-const MainComponent = () => {
-    // These would typically come from your app's state or an API call.
-    const transactions = rawTransactions;
-    const cards = myCards;
-    
-    // The categories you want to track, matching the color map.
-    const trackedCategories = ['Groceries', 'Dining', 'Travel', 'Gas', 'Other'];
-    
-    // Process the data!
-    const chartReadyData = processTransactionsForChart(transactions, cards, trackedCategories);
-
-    // Now, `chartReadyData` can be passed directly to the chart component.
-    // For example:
-    // return (
-    //   <SavingsStackedBarChart 
-    //     data={chartReadyData} 
-    //     title="Monthly Savings Breakdown"
-    //     categoryColors={...}
-    //   />
-    // );
-
-    // For this example, we'll just log the output to the console.
-    console.log(chartReadyData);
-
-    return <div>Check the console to see the processed chart data!</div>;
+  return (
+    <div className="bg-gray-100 min-h-screen w-full flex items-center justify-center p-4">
+      <SavingsStackedBarChart 
+        data={chartReadyData} 
+        title="Monthly Savings Breakdown by Category"
+        categoryColors={categoryColorMap}
+      />
+    </div>
+  );
 }
-
-// In a real app, you would export the processing function and import it where needed.
-// export { processTransactionsForChart };
